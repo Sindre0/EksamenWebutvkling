@@ -24,9 +24,9 @@ a{
     color: #000;
 }
 
-img{
+/*img{
     width: 100%;
-}
+}*/
 
 .logo{
     max-width: 110px;
@@ -83,6 +83,168 @@ main{
     grid-area: main;
 }
 
+.headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Kilde for bakgrunnsbilde https://www.w3schools.com/html/html_images_background.asp 
+    Bilde ble funnet på freepik.com/ Image by Sketchepedia on Freepik */
+    background-image: url('https://img.freepik.com/free-vector/abstract-sale-busioness-background-banner-design-multipurpose_1340-16814.jpg?w=996&t=st=1700589357~exp=1700589957~hmac=68de5cb8727301df0e65651eba4759b4f7be608f5cd827e29330fc410a7d2aed');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1rem;
+    margin-bottom: 6rem;
+}
+
+.readmore-btn {
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 700;
+    max-width: 280px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.readmore-btn:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+main h2{
+    font-size: 40px;
+    margin-inline: auto;
+    text-align: center;
+    max-width: 700px;
+    margin-top: 4rem;
+}
+
+
+.paraindex{
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+}
+
+.indexabout{
+    background-color: #e6bd43;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.placehold1{
+    margin: 3rem;
+}
+
+.aboutbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutbox h3{
+    margin-top: 6rem;
+    font-weight: 700;
+}
+
+.aboutbox p{
+    margin-right: 5rem;
+    text-align: left;
+    
+}
+
+.readmore-btn2 {
+    padding: 1rem;
+    text-decoration: double;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 700;
+    max-width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 1rem;
+}
+
+.readmore-btn2:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+.servicesbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+    
+}
+
+.servicesbox section{
+    display: flex;
+    flex-direction: column;
+}
+
+.servicesbox h3{
+    text-align: center;
+}
+
+.servicesbox p{
+max-width: 240px;
+text-align: center;
+margin-top: 0;
+}
+
+.servicesbox section i{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3rem;
+}
+
+.newsletter{
+    background-color: lightgrey;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+}
+
+.sign-btn{
+    padding: 1rem;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 700;
+    max-width: 200px;
+    text-align: center;
+}
+
+.sign-btn:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+.emailbox{
+    padding: 1rem;
+    margin: 0;
+    background-color: #fff;
+    min-width: 240px;
+}
+
+
 footer{
     grid-area: footer;
     background-color: #252525;
@@ -117,7 +279,7 @@ footer a{
 
 
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:675px){
     #grid-container{
         grid-template-areas: "header header header" "main main main" "footer footer footer";
         
