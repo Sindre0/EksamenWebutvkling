@@ -114,14 +114,14 @@ main{
     color: #e6bd43;
 }
 
-main h1{
+#indexh1{
     display: flex;
     justify-content: center;
     margin-top: 50px;
     font-size: 50px;
 }
 
-main h2{
+.indexh2{
     font-size: 40px;
     margin-inline: auto;
     text-align: center;
@@ -152,6 +152,7 @@ main h2{
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 
 .aboutbox h3{
@@ -160,7 +161,7 @@ main h2{
 }
 
 .aboutbox p{
-    margin-right: 5rem;
+    max-width: 650px;
     text-align: left;
     
 }
@@ -200,6 +201,7 @@ main h2{
 #servicesbox section{
     display: flex;
     flex-direction: column;
+    margin: 0rem 1rem;
 }
 
 #servicesbox h3{
@@ -243,13 +245,137 @@ margin-top: 0;
     color: #e6bd43;
 }
 
-.emailbox{
-    padding: 1rem;
-    margin: 0;
-    background-color: #fff;
-    min-width: 240px;
+
+#emailbox{
+    border: none;
 }
 
+
+
+/* about.html elementer*/
+
+.aboutheader{
+    display: flex;
+    justify-content: right;
+    background-image: url('https://img.freepik.com/free-photo/many-different-smart-phones-displayed-dark-background-busy-office-scene_1372-28.jpg?w=740&t=st=1700845376~exp=1700845976~hmac=55cac7fe8fc4a94680217ad59571b6482d3e04ca9b8a09af1c6cb7287028a37e');
+    /* Image by alexphotos on Freepik */
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-size: cover;
+    
+}
+
+.aboutheader h1{
+    font-size: 20px;
+    margin: 0;
+}
+
+.aboutheader h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#rightbox{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.getintouch-btn{
+    padding: 1rem;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    max-width: 200px;
+}
+
+.getintouch-btn:hover{
+    color: #e6bd43;
+    background-color: #000;
+}
+
+.clientsection{
+    background-color: #e6bd43;
+    padding: 3rem;
+}
+
+.clientsection h2{
+    font-size: 40px;
+    margin-inline: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.clientsbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clientsbox img{
+    margin: 1rem;
+}
+
+.contactsection{
+    background-color: #eee;
+    padding: 2rem;
+}
+
+.contactsection h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.contactbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.leftcontactbox{
+    line-height: 2rem;
+}
+
+.contactbox section{
+    width: 37%;
+    
+}
+
+.contactbox section input{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+}
+
+.contactbox section textarea{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    height: 150px;
+
+}
+
+.sendmessage-btn{
+    padding: 1rem;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    max-width: 200px;
+    line-height: 3rem;
+}
+
+.mailto-link{
+    color: #0000FF;
+    text-decoration: underline;
+}
 
 footer{
     grid-area: footer;
