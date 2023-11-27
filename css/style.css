@@ -114,7 +114,7 @@ main{
     color: #e6bd43;
 }
 
-#indexh1{
+.headline h1{
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -321,12 +321,12 @@ margin-top: 0;
     margin: 1rem;
 }
 
-.contactsection{
+#contactsection{
     background-color: #eee;
     padding: 2rem;
 }
 
-.contactsection h2{
+#contactsection h2{
     font-size: 40px;
     text-align: center;
 }
@@ -379,7 +379,7 @@ margin-top: 0;
 
 .google-map{
     overflow: hidden;
-    padding-bottom: 40%;
+    padding-bottom: 30%;
     position: relative;
     height: 0;
 }
@@ -390,6 +390,32 @@ margin-top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+
+/*products.html */
+
+.portofolioheader{
+    background-image: url("../images/product1.jpeg") ;
+    /* Image by alexphotos on Freepik */
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-size: cover; 
+    padding: 8rem 0;
+    
+}
+
+.portofolioheader h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.jobssection{
+    margin: 3rem;
+}
+
+.jobssection h2{
+    font-size: 40px;
 }
 
 footer{
