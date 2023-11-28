@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DemoCompany is a relatively new company founded in 2009, we have already launched...">
+    <meta property="og:title" content="About our company">
+    <meta property="og:description" content="Get to know our history and what our mission is">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/fontawesome.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/brands.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/solid.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Eksamen</title>
+    <title>About us - DemoCompany</title>
 </head>
 <body>
     <div id="grid-container">   
         <header>
-            <a href="index.html"><img src="images/logo1.png" alt="logo" class="logo"></a>
+            <a href="index.html" title="Takes you to the homepage"><img src="images/logo1.png" alt="innhold og pynt. logo home-button" class="logo"></a>
             <nav id="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -60,14 +63,16 @@
             <section class="clientsection">
                 <h2>Some of our clients</h2>
                 <section class="clientsbox">
-                <img src="images/logo1.png" alt="logo" class="clients">
-                <img src="images/logo2.png" alt="logo" class="clients">
-                <img src="images/logo3.png" alt="logo" class="clients">
+                <img src="images/logo1.png" alt="innhold. logo client" class="clients">
+                <img src="images/logo2.png" alt="innhold. logo client" class="clients">
+                <img src="images/logo3.png" alt="innhold. logo client" class="clients">
                 </section>
             </section>
             <section id="contactsection">
                 <h2>Contact us</h2>
                 <div class="contactbox">
+                    <!--https://www.w3schools.com/tags/tag_input.asp
+                    https://www.w3schools.com/tags/tag_textarea.asp-->
                     <section class="leftcontactbox">
                         <h3>Send us a message</h3>
                         <label for="nameinput">Name</label><br>
@@ -75,15 +80,15 @@
                         <label for="subjectinput">Subject</label><br>
                         <input type="text" name="subject" placeholder="Branding.." id="subjectinput"><br>
                         <label for="messageinput">Message</label><br>
-                        <textarea type="text" name="message" id="messageinput"></textarea>
+                        <textarea name="message" id="messageinput"></textarea>
                         <a href="#" class="sendmessage-btn">Send message</a>
                     </section>
-                    <section>
+                    <section class="rightcontactbox">
                         <h3>Contact information</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit reprehenderit sunt, omnis, aliquam in pariatur voluptatibus placeat architecto quis eligendi. Minus, corrupti perferendis!</p>
-                        <p>B R A Veien 4, 1757 Halden
-                        <p>69 60 80 00</p>
-                        <a href=mailto:postmottal@hiof.no class="mailto-link">postmottak@hiof.no</a> 
+                        <p><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</p>
+                        <p><i class="fa-solid fa-phone"></i>69 60 80 00</p>
+                        <p><i class="fa-solid fa-envelope"></i><a href=mailto:postmottal@hiof.no class="mailto-link">postmottak@hiof.no</a></p>
                     </section>
                 </div>
             </section>
@@ -93,9 +98,9 @@
         </main>
         <footer>
             <section id="bottom">
-                <a href="index.html"><img src="images/logo1.png" alt="logo" class="logo"></a>
+                <a href="index.html" title="Takes you to the homepage"><img src="images/logo1.png" alt="innhold og pynt." class="logo"></a>
                 <p>Companyrights Companyname 2023</p>
-                <div id="socials">
+                <div role="navigation" aria-label="socials" id="socials">
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>

@@ -24,9 +24,9 @@ a{
     color: #000;
 }
 
-/*img{
-    width: 100%;
-}*/
+h1{
+    font-size: 50px;
+}
 
 .logo{
     max-width: 110px;
@@ -67,9 +67,9 @@ nav a{
 }
 
 .contact-btn:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
-}
+} 
 
 .current-page {
     font-weight: 700;
@@ -87,8 +87,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Kilde for bakgrunnsbilde https://www.w3schools.com/html/html_images_background.asp 
-    Bilde ble funnet på freepik.com - Image by Sketchepedia on Freepik */
+    /* https://www.w3schools.com/html/html_images_background.asp 
+    Bilde ble funnet på freepik.com - Image by Sketchepedia on Freepik*/
     background-image: url('https://img.freepik.com/free-vector/abstract-sale-busioness-background-banner-design-multipurpose_1340-16814.jpg?w=996&t=st=1700589357~exp=1700589957~hmac=68de5cb8727301df0e65651eba4759b4f7be608f5cd827e29330fc410a7d2aed');
     background-repeat: no-repeat;
     background-attachment: unset;
@@ -110,15 +110,13 @@ main{
 }
 
 .readmore-btn:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
 }
 
 .headline h1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 50px;
-    font-size: 50px;
 }
 
 .indexh2{
@@ -144,8 +142,14 @@ main{
     margin-top: 4rem;
 }
 
-.placehold1{
+.indexabout div{
+    display: flex;
     margin: 3rem;
+    align-items: center;
+}
+
+.placehold1{
+    max-width: 338px;
 }
 
 .aboutbox{
@@ -179,7 +183,7 @@ main{
 }
 
 .readmore-btn2:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -241,7 +245,7 @@ margin-top: 0;
 }
 
 .sign-btn:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -295,12 +299,12 @@ margin-top: 0;
 
 .getintouch-btn:hover{
     color: #e6bd43;
-    background-color: #000;
+    background-color: #252525;
 }
 
 .clientsection{
     background-color: #e6bd43;
-    padding: 3rem;
+    padding: 3rem 1rem;
 }
 
 .clientsection h2{
@@ -343,6 +347,19 @@ margin-top: 0;
     line-height: 2rem;
 }
 
+
+.rightcontactbox p, .rightcontactbox a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rightcontactbox i{
+    font-size: 25px;
+    color: #252525;
+    text-decoration: none;
+} 
+
 .contactbox section{
     width: 37%;
     
@@ -368,8 +385,12 @@ margin-top: 0;
     color: #000;
     font-weight: 700;
     text-align: center;
-    max-width: 200px;
     line-height: 3rem;
+}
+
+.sendmessage-btn:hover{
+    background-color: #252525;
+    color: #e6bd43;
 }
 
 .mailto-link{
@@ -377,11 +398,13 @@ margin-top: 0;
     text-decoration: underline;
 }
 
+/* https://www.w3schools.com/graphics/google_maps_intro.asp */  
 .google-map{
     overflow: hidden;
     padding-bottom: 30%;
     position: relative;
     height: 0;
+    min-height: 200px;
 }
 
 .google-map iframe{
@@ -397,7 +420,8 @@ margin-top: 0;
 
 .portofolioheader{
     background-image: url("../images/product1.jpeg") ;
-    /* Image by alexphotos on Freepik */
+    /* Image by alexphotos on Freepik
+    samme bilde som på about.html bare nedlastet slik at jeg kunne endre farger for å velge riktig fargestyrke */
     background-repeat: no-repeat;
     background-attachment: unset;
     background-size: cover; 
@@ -407,7 +431,6 @@ margin-top: 0;
 
 .portofolioheader h1{
     text-align: center;
-    font-size: 50px;
 }
 
 .jobssection{
@@ -416,7 +439,57 @@ margin-top: 0;
 
 .jobssection h2{
     font-size: 40px;
+    margin-bottom: 5px;
 }
+
+.jobssection hr{
+    border: 1px solid #e6bd43;
+    margin-bottom: 3rem;
+}
+
+.portofolio-btn{
+    padding: 0.5rem;
+    color: #252525;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
+    border: 1px solid #8b8b8b;
+    margin: 0.5rem;
+}
+
+.portofolio-btn:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.flexbox section{
+    flex-grow: 1;
+    max-width: 692px;
+}
+
+.flexbox img{
+    width: 100%;
+    
+}
+
+/* https://www.w3schools.com/cssref/css3_pr_transform.php */
+.flexbox section:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+    
+}
+
+#development, #branding, #design{
+    scroll-margin-top: 50px;
+}
+
 
 footer{
     grid-area: footer;
@@ -456,6 +529,70 @@ footer a{
     #grid-container{
         grid-template-areas: "header" "main" "footer";
         
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .indexsubhead{
+        margin: 2rem;
+    }
+
+    .indexabout{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .placehold1{
+        width: 100%;
+    }
+
+    .aboutbox{
+        margin: 0rem 5rem;
+    }
+
+    .aboutbox h3{
+        margin-top: 0;
+    }
+
+    #rightbox{
+        width: 80%;
+    }
+
+    .clientsbox img{
+        max-width: 130px;
+    }
+
+    .contactbox{
+        flex-direction: column;
+    }
+
+    .contactbox section{
+        width: 100%;
+    }
+
+    .jobssection h2, .clientsection h2, #contactsection h2, .indexh2{
+        font-size: 25px;
+    }
+
+    #bottom{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
